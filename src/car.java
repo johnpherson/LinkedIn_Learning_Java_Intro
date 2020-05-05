@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class Car {
 
-    double averageMilesPerGallon;
+    double AverageMilesPerGallon;
     String licensePlate;
     Color paintColor;
     boolean areTailingWorking;
