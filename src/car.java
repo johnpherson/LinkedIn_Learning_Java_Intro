@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Car {
+public class car {
 
     // Data Types:
     // int -> integer 1, 2, 3
@@ -14,7 +14,7 @@ public class Car {
     Color paintColor;
     boolean areTailingWorking;
 
-    public Car(double inputAverageMPG,
+    public car(double inputAverageMPG,
                String inputLicensePlate,
                Color inputPaintColor,
                boolean inputAreTaillightsWorking) {
@@ -24,8 +24,5 @@ public class Car {
         this.areTailingWorking = inputAreTaillightsWorking;
     }
 
-    public void changePaintColor(Color newPaintColor) {
-        this.paintColor = newPaintColor;
-    }
 
 }
