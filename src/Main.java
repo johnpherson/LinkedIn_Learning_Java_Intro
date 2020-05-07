@@ -1,21 +1,30 @@
 import javax.xml.namespace.QName;
 import java.awt.*;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("John");
 
-        car myCar = new car(25.5, "1bc345", Color.BLUE, true);
-        car johnCar = new car(30, "juy586", Color.BLACK, false);
 
-        System.out.println("My car's license plate: " + myCar.licensePlate);
-        System.out.println("John's license plate: " + johnCar.licensePlate);
+//        System.out.println("Enter a word: ");
+        Scanner sc = new Scanner(System.in);
+        int useNumber = sc.nextInt();
+        System.out.println(useNumber);
+        double userNumber2 = sc.nextDouble();
+        System.out.println(userNumber2);
 
-        System.out.println(myCar.paintColor);
-        myCar.changePaintColor(Color.RED);
-        System.out.println(myCar.paintColor);
+        /*
+        String userInput = sc.next();
+
+        String uppercased = userInput.toUpperCase();
+        System.out.print(uppercased);
+
+        char firstCharacter = userInput.charAt(0);
+        System.out.println(firstCharacter);
+
+        System.out.println("Contains: "+ userInput.contains("enter"));
+        */
 
     }
 }
