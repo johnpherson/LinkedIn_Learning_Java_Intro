@@ -9,11 +9,15 @@ public class car {
     // Color -> from awt library
     // boolean -> true or false
 
+
+    //define the data types
     double averageMilesPerGallon;
     String licensePlate;
     Color paintColor;
     boolean areTailingWorking;
+    String myname;
 
+    //create the method
     public car(double inputAverageMPG,
                String inputLicensePlate,
                Color inputPaintColor,
@@ -24,5 +28,11 @@ public class car {
         this.areTailingWorking = inputAreTaillightsWorking;
     }
 
+    public void changePaintColor(Color newPaintColor) {
+        this.paintColor = newPaintColor;
+    }
 
-}
+    }
+
+
+
