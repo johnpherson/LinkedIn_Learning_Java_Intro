@@ -8,7 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
         // 31, 45, 22, 98, 10
+
+        car myCar = new car(25.5, "1be456", Color.BLUE, true);
+
+        double myCarSpeed = 50;
+        myCarSpeed = myCar.speedingUp(myCarSpeed);
+        System.out.println(myCarSpeed);
+
+
+        /*
         int[] numbers = new int[5];
+
 
         numbers[0] = 31;
         numbers[1] = 45;
@@ -33,7 +43,7 @@ public class Main {
         Array.get(myFavoriteCandyBars, 2);
 
 
-        /*
+
         System.out.println("Enter a number: ");
         Scanner sc = new Scanner(System.in);
         int useNumber = sc.nextInt();

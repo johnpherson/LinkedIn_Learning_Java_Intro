@@ -32,6 +32,11 @@ public class car {
         this.paintColor = newPaintColor;
     }
 
+    public double speedingUp(double currentSpeed){
+        currentSpeed += 100;
+        return currentSpeed;
+    }
+
     }
 
 
