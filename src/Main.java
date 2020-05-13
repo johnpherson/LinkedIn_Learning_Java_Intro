@@ -4,6 +4,7 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.DoubleToIntFunction;
+import java.util.Random;
 
 public class Main {
 
@@ -116,7 +117,7 @@ public class Main {
         myDog.changeDogsWeight(nextDogWeight);
         //print out final weight
         System.out.println(myDog.weight);
-        */
+
 
         System.out.println("Enter and age: ");
         Scanner in = new Scanner(System.in);
@@ -130,6 +131,47 @@ public class Main {
         }
         else if (age >= 13 && age <= 19) {
             System.out.println("Teen");
+        }
+        else if (age > 18) {
+            System.out.println("Adult");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+        System.out.println("Thanks for using this program!");
+
+
+
+        //while
+        System.out.println("While loop");
+        int x = 3;
+        while(x > 0) {
+            System.out.println("Current x: "+x);
+            x = x-1;
+        }
+        System.out.println("Final x: "+x);
+        System.out.println();
+
+        //for
+        System.out.println("for loop");
+        for(int i = 3; i > 0; i--) {
+            System.out.println("Current i: "+i);
+        }
+        System.out.println();
+
+        double squareRoot = Math.sqrt(64);
+        System.out.println(squareRoot);
+
+        Random rand = new Random();
+        int randomNumber = rand.nextInt();
+        System.out.println(randomNumber);
+        */
+
+        coin c = new coin(coin.HEADS);
+        System.out.println("Initial: "+c.getFaceUp());
+        for(int i = 0; i < 10; i++) {
+            c.flip();
+            System.out.println("After Flip: "+c.getFaceUp());
         }
 
     }
