@@ -11,4 +11,22 @@ public class coin {
         faceUp = start;
     }
 
+    public void flip() {
+        Random rand = new Random();
+        faceUp = rand.nextInt(2);
+    }
+
+    public String getFaceUp(){
+        if (faceUp == HEADS) {
+            return "HEADS";
+        }
+        else if (faceUp == TAILS){
+            return "TAILS";
+        }
+        else {
+            return "INVALID";
+        }
+    }
+
+
 }

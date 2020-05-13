@@ -167,7 +167,12 @@ public class Main {
         System.out.println(randomNumber);
         */
 
-
+        coin c = new coin(coin.HEADS);
+        System.out.println("Initial: "+c.getFaceUp());
+        for(int i = 0; i < 10; i++) {
+            c.flip();
+            System.out.println("After Flip: "+c.getFaceUp());
+        }
 
     }
 }
