@@ -3,12 +3,13 @@ import java.lang.reflect.Array;
 import java.awt.*;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.function.DoubleToIntFunction;
 
 public class Main {
 
     public static void main(String[] args) {
         // 31, 45, 22, 98, 10
-
+        /*
         car myCar = new car(25.5, "1be456", Color.BLUE, true);
 
         double myCarSpeed = 50;
@@ -16,7 +17,7 @@ public class Main {
         System.out.println(myCarSpeed);
 
 
-        /*
+
         int[] numbers = new int[5];
 
 
@@ -62,7 +63,7 @@ public class Main {
         System.out.println(firstCharacter);
 
         System.out.println("Contains: "+ userInput.contains("enter"));
-        */
+
 
         dog myDog = new dog("lab", 100.00, 75);
         System.out.println(myDog.breed);
@@ -100,6 +101,9 @@ public class Main {
         System.out.println(myDog.breed);
 
 
+
+
+
         //Original dogs weight
         System.out.println("Dogs current weight"+myDog.weight);
         //prompt user
@@ -112,6 +116,21 @@ public class Main {
         myDog.changeDogsWeight(nextDogWeight);
         //print out final weight
         System.out.println(myDog.weight);
+        */
+
+        System.out.println("Enter and age: ");
+        Scanner in = new Scanner(System.in);
+        int age = in.nextInt();
+
+        if (age >= 0 && age <= 5) {
+            System.out.println("Baby");
+        }
+        else if (age >= 6 && age <= 11){
+            System.out.println("Kid");
+        }
+        else if (age >= 13 && age <= 19) {
+            System.out.println("Teen");
+        }
 
     }
 }

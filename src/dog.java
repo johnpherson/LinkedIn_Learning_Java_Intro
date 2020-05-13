@@ -31,9 +31,6 @@ public class dog {
         return newWeight;
     }
 
-
-
-
 }
 
 
