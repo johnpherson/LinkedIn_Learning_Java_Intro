@@ -165,7 +165,7 @@ public class Main {
         Random rand = new Random();
         int randomNumber = rand.nextInt();
         System.out.println(randomNumber);
-        */
+
 
         coin c = new coin(coin.HEADS);
         System.out.println("Initial: "+c.getFaceUp());
@@ -173,7 +173,10 @@ public class Main {
             c.flip();
             System.out.println("After Flip: "+c.getFaceUp());
         }
-
+        */
+        dice_roll dice_roll = new dice_roll();
+        System.out.println(dice_roll.roll());
+        System.out.println(dice_roll.roll());
     }
 }
 
