@@ -23,16 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="925e77fb-055c-48eb-a821-953bdcbf27a8">
-        <schema name="pg_catalog" object-types="table, view" />
-        <schema name="public" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="925e77fb-055c-48eb-a821-953bdcbf27a8">
-      <console name="localhost" type="STANDARD" schema="test" session="Main">set search_path to test;
+      <console name="localhost" type="STANDARD" schema="test" session="Main"><![CDATA[set search_path to test;
 
 
 
@@ -62,7 +57,7 @@ values (
 ;
 
 
-ALTER TABLE test.testcustomer ALTER COLUMN  TYPE TIMESTAMP WITH TIME ZONE USING t AT TIME ZONE 'UTC'</console>
+ALTER TABLE test.testcustomer ALTER COLUMN  TYPE TIMESTAMP WITH TIME ZONE USING t AT TIME ZONE 'UTC']]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
